@@ -1,0 +1,71 @@
+/* First program in Apex */
+
+system.debug('Welcome to Apex Programming'.);
+system.debug('This is my first Apex Program'.);
+
+
+
+/* Write an Apex code to define a variables and print the values: */
+==============================================================
+integer customerCode;
+string customerName;
+
+    system.debug(customerCode);
+    system.debug(customerName);
+
+    system.debug('customerCode is...' +customerCode);
+    system.debug('customerName is...' +customerName);
+
+customerCode = 123456;
+customerName = 'Mallika';
+
+    system.debug('customerCode is...' +customerCode);
+    system.debug('customerName is...' +customerName);
+    
+    
+    /* Write an apex program to calculate the total and average marks of 5 subjects: */
+=============================================================================
+
+integer English, Hindi, Maths, Physics, Chemistry, Total, Average;
+
+	English = 90;
+	Hindi = 75;
+	Maths = 99;
+	Physics = 85;
+	Chemistry = 90;
+
+	Total = English + Hindi + Maths + Physics + Chemistry;
+	system.debug('Total Marks are ...' +Total);
+	
+	Average = Total / 5;
+	system.debug('Average Marks are ...' +Average);
+
+/* Write an apex program to calculate sum of first 100 numbers: */
+============================================================
+
+integer n, sum;
+
+	n = 100;
+	sum = (n*(n+1)) / 2;
+
+ 	system.debug('Sum of the numbers is ...' +sum);
+  
+  /* Write an apex program to define two numerical variables to perform all the mathematical calculations and print the values: */
+===========================================================================================================================
+
+integer firstNumber, secondNumber, result;
+
+		firstNumber = 150;
+		secondNumber = 10;
+
+		result = firstNumber + secondNumber;
+		system.debug('Sum of Two numbers is ...' +result);
+
+		result = firstNumber - secondNumber;
+		system.debug('Difference of Two numbers is ...' +result);
+
+		system.debug('Multiply value of Two numbers is ...' +(firstNumber * secondNumber));
+
+		system.debug('Division value of Two numbers is ...' +(firstNumber / secondNumber));
+
+		system.debug('Reminder value of Two numbers is ...' + Math.Mod(firstNumber, secondNumber)); 
